@@ -24,10 +24,20 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <link
+          rel="stylesheet"
+          href="https://fonts.googleapis.com/icon?family=Material+Icons"
+        />
+      </head>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-background text-foreground`}
       >
-        {children}
+        <main className="min-h-screen flex flex-col">
+          {/* Navbar */}
+          <div className="flex-1 container mx-auto px-4">{children}</div>
+          {/* Footer */}
+        </main>
       </body>
     </html>
   );

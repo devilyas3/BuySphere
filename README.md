@@ -1,36 +1,94 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# BuySphere 🛒  
+A modern e-commerce platform built with **Next.js, Tailwind CSS**, and **TypeScript**. The project is structured for scalability, following a component-based architecture.  
 
-## Getting Started
+## 🚀 Features  
+- **Responsive Design** with Tailwind CSS  
+- **Component-Based Architecture**  
+- **Dark Mode Support**  
+- **Dynamic Navigation Bar** with a Mobile Menu  
+- **Google Material Icons for UI Enhancements**  
+- **Scalable Code Structure** for easy maintenance  
 
-First, run the development server:
+---
 
+## 📂 Project Structure  
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+src/
+│── components/
+│   │── Navbar.tsx
+│   │── Footer.tsx
+│   │── Home.tsx
+│   │── <other main components>
+│   │── Navbar/
+│   │── subcomponents/
+│   │   │── Navbar/
+│   │   │   │── NavLinks.tsx
+│   │   │   │── SearchBar.tsx
+│   │   │   │── MobileMenu.tsx
+│   │   │── Footer/
+│   │   │   │── FooterSubComp1.tsx
+│   │   │   │── FooterSubComp2.tsx
+│   │   │── Home/
+│   │   │   │── HomeSubComp1.tsx
+│   │   │   │── HomeSubComp2.tsx
+│   │   │   │── HomeSubComp3.tsx
+│── app/
+│   │── layout.tsx
+│   │── page.tsx
+│── styles/
+│   │── global.css
+│── public/
+│── package.json
+│── tsconfig.json
+│── README.md
+│── .eslintrc.json
+│── .prettierrc
+│── next.config.js
 ```
+---
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🛠 Tech Stack
+- **Frontend:** Next.js, TypeScript, Tailwind CSS
+- **Icons:** Google Material Icons
+- **Linting & Formatting:** ESLint, Prettier
+- **Version Control:** Git & GitHub
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🏗 Installation & Setup
+- **1️⃣ Clone the Repository:**
+    ```
+    git clone <repo-url>
+    cd BuySphere
+    ```
+- **2️⃣ Install Dependencies:**
+    ```
+    npm install
+    ```
+- **3️⃣ Run the Development Server:**
+    ```
+    npm run dev
+    ```
+The app should now be running at http://localhost:3000 🚀
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## 📌 To-Do List
+ - **Implement authentication**
+ - **Create product listing page**
+ - **Add cart functionality**
+ - **Integrate payment gateway**
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+ --- 
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+ ## 💡 Contribution Guide
+- **Fork & Clone** the repository
+- **Create a feature branch** `(git checkout -b feature-name)`
+- **Make changes & commit** `(git commit -m "Added new feature")`
+- **Push to GitHub** `(git push origin feature-name)`
+- **Create a Pull Request** 🎉
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 📜 License
+This project is licensed under the MIT License.
