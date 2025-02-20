@@ -3,9 +3,11 @@
 import { useState } from "react";
 import MobileMenu from "./subcomponents/Navbar/MobileMenu";
 import NavLinks from "./subcomponents/Navbar/NavLinks";
+import { useAuth } from "./subcomponents/Auth/AuthContext";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
+  const { user, logout } = useAuth();
 
   function toggleMenu() {
     setIsOpen(!isOpen);
