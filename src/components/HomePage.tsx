@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import { Product } from "@/types/product";
 import ProductList from "./subcomponents/Product/ProductList";
+import Cart from "./Cart";
 
 export default function HomePage() {
     const [loading, setLoading] = useState<boolean>(true);
@@ -30,6 +31,7 @@ export default function HomePage() {
 
     return (
         <div className="container mx-auto p-4">
+            <Cart />
             {/* <p>Hero Section Component</p> */}
             <div className="flex gap-4">
                 {/* <p>Filter Component</p> */}

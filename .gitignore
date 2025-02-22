@@ -17,7 +17,7 @@
 /.next/
 /out/
 /lib/
-src/lib
+src/lib 
 
 # production
 /build
